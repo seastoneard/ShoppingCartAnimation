@@ -8,7 +8,7 @@
 <p><span style="line-height:26px"><span style="font-size:14px"><span style="font-family:SimHei"><br>
 </span></span></span></p>
 <p><span style="font-family:SimHei"><span style="font-size:14px"><strong>效果：</strong></span></span></p>
-<p><span style="font-family:SimHei"><span style="font-size:14px"><strong><img src="http://img.blog.csdn.net/20170320152008673?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvemhoX2NzZG5fYXJk/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" width="220" height="360" alt=""><br>
+<p><span style="font-family:SimHei"><span style="font-size:14px"><strong><img src="http://wx2.sinaimg.cn/large/006pg0W4gy1fdtfi51rl4g30as0inhdt.gif" width="220" height="360" alt=""><br>
 </strong></span></span></p>
 <p><strong style="color:rgb(51,51,51); font-family:&quot;Microsoft YaHei&quot;,Arial; font-size:14px"><br>
 </strong></p>
