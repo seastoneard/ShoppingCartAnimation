@@ -25,8 +25,8 @@
     private ListView listView;
     private TextView goods_all_pricetv;
     private TextView good_numtv;
-    private List&lt;FoodModel&gt; list;
-    private List&lt;FoodModel&gt; selectList = new ArrayList&lt;&gt;();
+    private List<FoodModel> list;
+    private List<FoodModel> selectList = new ArrayList<>();
     private FoodAdapter adapter = null;
 
     @Override
@@ -34,7 +34,7 @@
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //沉浸式状态栏
-        if (Build.VERSION.SDK_INT &gt;= Build.VERSION_CODES.KITKAT) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
             //透明状态栏
             getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
             //透明导航栏
@@ -46,13 +46,12 @@
         findViewById(R.id.goods_submit_tv).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (null != selectList &amp;&amp; selectList.size() &gt; 0) {
-                    Toast.makeText(MainActivity.this, &quot;你一共加入购物车&quot; + good_numtv.getText() +
-                            &quot;份商品,总价格为：&quot; + goods_all_pricetv.getText(), Toast.LENGTH_SHORT).show();
+                 if (null != selectList && selectList.size() > 0) {
+                    Toast.makeText(MainActivity.this, "你一共加入购物车" + good_numtv.getText() +
+                            "份商品,总价格为：" + goods_all_pricetv.getText(), Toast.LENGTH_SHORT).show();
                 } else {
-                    Toast.makeText(MainActivity.this, &quot;你的购物车为空&quot;, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "你的购物车为空", Toast.LENGTH_SHORT).show();
                 }
-
 
             }
         });
@@ -97,10 +96,10 @@
 
     //购物车份数+总价格计算
     private void calculatePrice() {
-        selectList.clear();
+       selectList.clear();
         double price = 0;
         int num = 0;
-        Iterator&lt;FoodModel&gt; iterator = list.iterator();
+        Iterator<FoodModel> iterator = list.iterator();
         while (iterator.hasNext()) {
             FoodModel model = iterator.next();
             if (model.getNum() != 0) {
@@ -109,8 +108,8 @@
                 num += model.getNum();
             }
         }
-        goods_all_pricetv.setText(&quot;￥&quot; + adapter.priceResult(price) + &quot;元&quot;);
-        good_numtv.setText(num + &quot;&quot;);
+        goods_all_pricetv.setText("￥" + adapter.priceResult(price) + "元");
+        good_numtv.setText(num + "");
     }
 }
 </pre><br>
